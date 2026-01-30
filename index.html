@@ -3,18 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Zarifa</title>
+    <title>Ztudio</title>
 
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
+    
+    <!--Tailwind CSS CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-    <header></header>
+    <header class="main-header p-2">
+        <!--Logo-->
+        <div class="logo"></div>
+        
+        <!--Navigation Bar-->
+        <nav class="flex">
+            <a class="border rounded p-2" href="#home-page">Home</a>
+            <a class="border rounded p-2" href="#our-profile-page">Our Profile</a>
+            <a class="border rounded p-2" href="#message-us-page">Message Us</a>
+        </nav>
+    </header>
 
-    <main></main>
+    <hr/>
 
-    <foot></foot>
+    <main>
+        <!--Home Page-->
+        <div class="banner-image"></div>
+        
+        <section id="home-page" class="min-h-[500px] text-center content-center">
+            <h1 class="text-4xl font-bold p-4" id="welcome-speech">Welcome to Ztudio Company</h1>
+            <p class="text-lg p-4"><i>Discover things about our company.</i></p>
+        </section>
+
+        <hr/>
+
+        <!--Our Profile-->
+        <section id="our-profile-page" class="min-h-[500px] text-center content-center">
+            <!--About Ztudio-->
+            <h2 class="text-3xl font-bold p-4">About Ztudio</h2>
+            <p class="text-lg p-4">Ztudio adalah studio animasi 3D yang senang bereksperimen dengan ide, karakter, dan dunia imajinatif. Kami mengubah konsep sederhana menjadi animasi 3D yang hidup, seru, dan penuh kepribadian. </p>
+            <p class="text-lg p-4">Bagi kami, animasi bukan sekadar visual yang keren, tapi juga soal cerita, ekspresi, dan pengalaman yang membuat orang berhenti sejenak dan tersenyum. Dengan kombinasi kreativitas, teknologi, dan rasa ingin tahu yang besar, Ztudio hadir untuk menghidupkan ide-ide menjadi visual yang berkesan. </p>
+            <!--Ztudio Vision-->
+            <h2 class="text-3xl font-bold p-4">Ztudio Vision</h2>
+            <p class="text-lg p-4">Menjadi studio animasi 3D yang dikenal lewat karya-karya <i>playful</i>, kreatif, dan berani beda, serta mampu menghidupkan imajinasi dalam setiap frame.</p>
+            <!--Ztudio Mission-->
+            <h2 class="text-3xl font-bold p-4">Ztudio Mission</h2>
+            <ul class="list-disc list-inside text-lg p-4">
+                <li>Menghidupkan ide-ide imajinatif menjadi animasi 3D yang <i>playful</i>, ekspresif, dan penuh karakter.</li>
+                <li>Menciptakan visual 3D yang <i>engaging</i> dan mudah diingat.</li>
+                <li>Terus bereksperimen dengan gaya visual, <i>storytelling</i>, dan teknologi animasi terbaru.</li>
+                <li>Bekerja secara kolaboratif dengan klien lewat proses yang santai dan terbuka.</li>
+                <li>Menjaga kualitas karya tanpa kehilangan rasa <i>playful</i> dalam setiap proyek.</li>
+        </section>
+
+        <hr/>
+
+        <!--Message Us Page-->
+        <section id="message-us-page" class="min-h-[500px] text-center content-center">
+            <header>
+            <h2 class="text-3xl font-bold p-4">Message Us</h2>
+            <p class="text-lg p-4"><i>Get in touch with us for any inquiries.</i></p>
+            </header>
+
+            <form id="contact-form">
+                <div class="mb-4">
+                    <label for="name" class="block text-left mb-2">Name:</label>
+                    <input type="text" id="name" placeholder="Your name" name="name" class="w-full p-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="date" class="block text-left mb-2">Birth Date:</label>
+                    <input type="date" id="date" name="date" class="w-full p-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-left mb-2">Email:</label>
+                    <input type="email" id="email" placeholder="Your email address" name="email" class="w-full p-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-left mb-2">Message:</label>
+                    <textarea id="message" placeholder="Type your message" name="message" rows="4" class="w-full p-2 border rounded" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white p-2 rounded">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <foot>
+        <div class="text-center p-4">
+            &copy; 2026 Zarifa's Portfolio. All rights reserved.
+        </div>
+    </foot>
     
     <!--JavaScript-->
     <script src="js/script.js"></script>
