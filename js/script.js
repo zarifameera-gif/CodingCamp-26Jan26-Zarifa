@@ -15,5 +15,11 @@ function welcomeMessage() {
     document.getElementById("welcome-speech").innerText = `Hello, ${userResponse}! Welcome to Ztudio.`;
 }
 
+submitMessage();
+
 function submitMessage() {
+    const submitButton = document.getElementById("submit-button");
+    submitButton.addEventListener("click", function() {
+        alert("Your message has been submitted. Thank you!");
+    });
 }
